@@ -1,6 +1,6 @@
 # 有些急性子 · Joe-rq
 
-**AI-native FDE / AI Systems Builder** —— 从真实业务现场出发，把 AI 做成**可训练、可约束、可评测、可交付**的系统。
+**AI-native FDE / AI Systems Builder** —— 从真实业务现场出发，把 AI 做成**可控、可评测、可交付、可持续迭代**的系统。
 
 3 年+ 医疗信息化一线交付（HIS / LIS / PACS / 医保），习惯先问：真实问题是什么、系统边界在哪里、如何验收、出问题如何回退——现在把这套交付方法延伸到模型、Agent、Harness 与 Eval。
 
@@ -14,7 +14,7 @@
 | **Agent** | Tools、Router、确定性与生成式协同 | [EduAssistant](https://github.com/Joe-rq/EduAssistant) |
 | **Harness** | Spec、边界、Review、QA、交付治理 | [harness-lab](https://github.com/Joe-rq/harness-lab) |
 | **Eval** | 受控评测、证据链、可复现 | [MedMirror](https://github.com/Joe-rq/MedMirror) |
-| **Delivery** | 从需求发现到部署、采用与复用 | [MediAppHub](https://github.com/Joe-rq/MediAppHub) / [ai-native-delivery-workbench](https://github.com/Joe-rq/ai-native-delivery-workbench) |
+| **Delivery** | 从需求发现到部署、采用与复用 | [MediAppHub](https://github.com/Joe-rq/MediAppHub) |
 
 ## 代表项目
 
@@ -44,15 +44,13 @@ AI Coding 让开发变快，也带来需求漂移、Agent 越界、Review 无据
 
 **19 张表 · 17 个 API · 50+ 项测试 · 2 名真实用户持续使用至今**
 
-它要回答的问题只有一个：系统最后能不能真正被部署、被使用、被接手。
-
 ## 我的工程原则
 
 **1. 能确定性解决的，不默认交给 LLM。**
 EduAssistant 用「规则 → 工具 → 生成」三层路由，把确定性问题从 LLM 路径上剥离：11 个工具、23 项测试、40 case × 4 领域 Benchmark。
 
 **2. 没有 Eval，就不要轻易相信 Demo。**
-封存留出集与统计检验（ReJev）、Run Archive 与来源查证（MedMirror）、34 个百分点的评测口径教训（iris-eval）——结论必须附带证据链。
+ReJev 用封存留出集和统计检验，MedMirror 保留完整 Run Archive 与来源证据——结论必须附带证据链。
 
 **3. 最终交付的是系统，不是 Prompt。**
 Spec、Harness、Eval、部署、知识转移——目标是下一位接手者（人或 Agent）能继续运行、测试和迭代。
@@ -70,4 +68,4 @@ Spec、Harness、Eval、部署、知识转移——目标是下一位接手者�
 - GitHub: [@Joe-rq](https://github.com/Joe-rq)
 - Email: [qrq-hit@foxmail.com](mailto:qrq-hit@foxmail.com)
 
-> 我不只对「做出 Demo」负责，更对问题判断、交付边界和真实采用负责。
+> 从问题判断到真实采用，对完整交付负责。
